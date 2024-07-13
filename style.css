@@ -115,6 +115,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
     margin-top: 0px;
   }
   .lado-izquierdo {
@@ -186,7 +187,6 @@ body {
   .lado-derecho::after {
     position: absolute;
     top: 0;
-    left: 0;
     width: 370px;
     height: 100%;
     background-color: hsla(
