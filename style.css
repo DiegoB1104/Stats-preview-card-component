@@ -172,6 +172,31 @@ body {
   .numero-izquierdo p {
     margin-left: -10px;
   }
+
+  .lado-derecho {
+    position: relative;
+  }
+
+  .imagen {
+    display: block;
+    width: 370px;
+    height: 350px;
+  }
+
+  .lado-derecho::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 100%;
+    background-color: hsla(
+      277,
+      64%,
+      61%,
+      0.445
+    ); /* Cambia el color y la opacidad según tus necesidades */
+    pointer-events: none; /* Permite hacer clic en la imagen a través de la superposición */
+  }
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
